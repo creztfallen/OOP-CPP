@@ -7,6 +7,9 @@ using namespace std;
 class Car
 {
 public:
+    Car();
+    Car(string brand, int year);
+    ~Car();
     void setBrand(string brand);
     string getBrand();
     void setYear(int year);

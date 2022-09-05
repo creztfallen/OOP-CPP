@@ -2,6 +2,7 @@
 
 #include <string>
 using namespace std;
+#include <iostream>
 
 void Car::setBrand(string brand)
 {
@@ -28,4 +29,20 @@ string Car::getBrand()
 int Car::getYear()
 {
     return this->year;
+}
+
+Car::Car()
+{
+    this->brand = "Peugeot";
+}
+
+Car::Car(string brand, int year)
+{
+    this->brand = brand;
+    this->year = year;
+}
+
+Car::~Car()
+{
+    cout << "Car was destroyed." << endl;
 }
