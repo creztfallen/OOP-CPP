@@ -4,40 +4,7 @@
 
 using namespace std;
 
-class Car
-{
-private:
-    string brand;
-    int year;
-
-public:
-    void setBrand(string b)
-    {
-        brand = b;
-    };
-
-    string getBrand()
-    {
-        return brand;
-    };
-
-    void setYear(int y)
-    {
-        if (year > 1990)
-        {
-            year = y;
-        }
-        else
-        {
-            year = 1990;
-        }
-    };
-
-    int getYear()
-    {
-        return year;
-    };
-};
+#include "Car.h"
 
 int main(int argc, char **argv)
 {
