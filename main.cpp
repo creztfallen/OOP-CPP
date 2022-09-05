@@ -13,12 +13,9 @@ int main(int argc, char **argv)
     c1.setBrand("Dodge");
     c1.setYear(2022);
 
-    Car c2;
-    c2.setBrand("Ferrari");
-    c2.setYear(1650);
+    Car c2("Ferrari", 1680);
 
-    cout << c1.getBrand() << endl;
-    cout << c2.getYear() << endl;
+    cout << c2.getBrand() << endl;
 
     return 0;
 };
