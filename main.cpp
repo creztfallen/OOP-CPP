@@ -6,27 +6,52 @@ using namespace std;
 
 class Car
 {
-public:
+private:
     string brand;
     int year;
 
-private:
-    string color;
+public:
+    void setBrand(string b)
+    {
+        brand = b;
+    };
+
+    string getBrand()
+    {
+        return brand;
+    };
+
+    void setYear(int y)
+    {
+        if (year > 1990)
+        {
+            year = y;
+        }
+        else
+        {
+            year = 1990;
+        }
+    };
+
+    int getYear()
+    {
+        return year;
+    };
 };
 
 int main(int argc, char **argv)
 {
 
     Car c1;
-    c1.brand = "Dodge";
-    c1.year = 2022;
+    c1.setBrand("Dodge");
+    c1.setYear(2022);
 
     Car c2;
-    c2.brand = "Ferrari";
-    c2.year = 2019;
+    c2.setBrand("Ferrari");
+    c2.setYear(1650);
 
-    cout << c1.brand << endl;
-    cout << c2.brand << endl;
+    cout << c1.getBrand() << endl;
+    cout << c2.getYear() << endl;
 
     return 0;
 };
